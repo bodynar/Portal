@@ -2,7 +2,7 @@
 {
     using Portal.Infrastructure;
 
-    internal class TransactionCommandHandlerDecorator<TCommand> : BaseCommandHandler<TCommand>
+    public class TransactionCommandHandlerDecorator<TCommand> : BaseCommandHandler<TCommand>
         where TCommand : ICommand
     {
         private readonly ICommandHandler<TCommand> decorated;

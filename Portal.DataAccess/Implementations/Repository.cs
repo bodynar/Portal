@@ -5,7 +5,7 @@ namespace Portal.DataAccess
 
     using Portal.Entites;
 
-    internal class Repository<TEntity> : IRepository<TEntity>
+    public class Repository<TEntity> : IRepository<TEntity>
         where TEntity : Entity
     {
         private DataBaseContext DataBaseContext { get; }

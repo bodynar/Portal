@@ -7,7 +7,7 @@ namespace Portal.Cqrs.Query
     using Portal.Entites;
     using Portal.Infrastructure;
 
-    internal abstract class BaseQueryHandler<TQuery, TResult> : IQueryHandler<TQuery, TResult>
+    public abstract class BaseQueryHandler<TQuery, TResult> : IQueryHandler<TQuery, TResult>
         where TQuery : IQuery<TResult>
     {
         #region Private fields

@@ -3,7 +3,7 @@ namespace Portal.DataAccess
     using System;
     using Microsoft.EntityFrameworkCore.Storage;
 
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly DataBaseContext _dbContext;
 

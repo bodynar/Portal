@@ -4,7 +4,7 @@ using System;
 
 namespace Portal.Infrastructure
 {
-    internal class SimpleInjectorResolver : IResolver
+    public class SimpleInjectorResolver : IResolver
     {
         private Container Container { get; }
 

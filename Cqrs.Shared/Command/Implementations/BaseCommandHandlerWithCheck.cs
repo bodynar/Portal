@@ -3,7 +3,7 @@
     using Portal.Cqrs.Query;
     using Portal.Infrastructure;
 
-    internal abstract class BaseCommandHandlerWithCheck<TCommand> : BaseCommandHandler<TCommand>
+    public abstract class BaseCommandHandlerWithCheck<TCommand> : BaseCommandHandler<TCommand>
         where TCommand : ICommand
     {
         public BaseCommandHandlerWithCheck(

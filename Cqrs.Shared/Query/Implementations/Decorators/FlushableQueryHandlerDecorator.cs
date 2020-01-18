@@ -3,7 +3,7 @@ namespace Portal.Cqrs.Query
     using Portal.DataAccess;
     using Portal.Infrastructure;
 
-    internal class FlushableQueryHandlerDecorator<TQuery, TResult> : BaseQueryHandler<TQuery, TResult>
+    public class FlushableQueryHandlerDecorator<TQuery, TResult> : BaseQueryHandler<TQuery, TResult>
         where TQuery : IQuery<TResult>
     {
         private readonly IQueryHandler<TQuery, TResult> decorated;

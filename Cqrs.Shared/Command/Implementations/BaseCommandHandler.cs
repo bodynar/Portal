@@ -7,7 +7,7 @@
     using Portal.Entites;
     using Portal.Infrastructure;
 
-    internal abstract class BaseCommandHandler<TCommand> : ICommandHandler<TCommand>
+    public abstract class BaseCommandHandler<TCommand> : ICommandHandler<TCommand>
         where TCommand : ICommand
     {
         #region Private fields
