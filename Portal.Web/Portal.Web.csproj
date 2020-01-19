@@ -17,6 +17,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
     <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="4.9.0" />
     <PackageReference Include="SimpleInjector.Integration.ServiceCollection" Version="4.9.0" />
   </ItemGroup>
@@ -33,7 +38,6 @@
     <ProjectReference Include="..\Cqrs.Queries\Portal.Cqrs.Queries.csproj" />
     <ProjectReference Include="..\Cqrs.Shared\Portal.Cqrs.csproj" />
     <ProjectReference Include="..\Portal.Bootstrap\Portal.Bootstrap.csproj" />
-    <ProjectReference Include="..\Portal.DataAccess.Migrations\Portal.DataAccess.Migrations.csproj" />
     <ProjectReference Include="..\Portal.DataAccess\Portal.DataAccess.csproj" />
     <ProjectReference Include="..\Portal.Entities\Portal.Entities.csproj" />
     <ProjectReference Include="..\Portal.Infrastructure\Portal.Infrastructure.csproj" />
