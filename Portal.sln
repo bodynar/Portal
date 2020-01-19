@@ -32,8 +32,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Entities", "Portal.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Bootstrap", "Portal.Bootstrap\Portal.Bootstrap.csproj", "{9AF1C292-F399-40A4-B4E2-F9A475F032A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.DataAccess.Migrations", "Portal.DataAccess.Migrations\Portal.DataAccess.Migrations.csproj", "{089298B9-10BC-43A1-BA68-2A8AEFB899EB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,10 +70,6 @@ Global
 		{9AF1C292-F399-40A4-B4E2-F9A475F032A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AF1C292-F399-40A4-B4E2-F9A475F032A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AF1C292-F399-40A4-B4E2-F9A475F032A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{089298B9-10BC-43A1-BA68-2A8AEFB899EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{089298B9-10BC-43A1-BA68-2A8AEFB899EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{089298B9-10BC-43A1-BA68-2A8AEFB899EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{089298B9-10BC-43A1-BA68-2A8AEFB899EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,7 +83,6 @@ Global
 		{4BA61402-C98D-4C06-813C-AEAA34BB7365} = {2839B2B7-8C9B-4F15-9A0D-E77D8B1B9F6E}
 		{C6C113AD-841E-4459-A3D3-A86B5ED80885} = {2839B2B7-8C9B-4F15-9A0D-E77D8B1B9F6E}
 		{9AF1C292-F399-40A4-B4E2-F9A475F032A0} = {95570524-FC86-4D1E-B3EC-085B6801AFC7}
-		{089298B9-10BC-43A1-BA68-2A8AEFB899EB} = {2839B2B7-8C9B-4F15-9A0D-E77D8B1B9F6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E01A7F5E-AB10-4E2E-BA87-7FBAFF2591A7}
