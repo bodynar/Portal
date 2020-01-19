@@ -3,7 +3,7 @@ namespace Portal.DataAccess
     using System;
     using System.Linq;
 
-    using Portal.Entites;
+    using Portal.Entities;
 
     public class Repository<TEntity> : IRepository<TEntity>
         where TEntity : Entity
