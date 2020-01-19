@@ -39,8 +39,8 @@
 
             #region Database
 
-            //container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
-            //container.Register(typeof(IRepository<>), typeof(Repository<>));
+            container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
+            container.Register(typeof(IRepository<>), typeof(Repository<>));
 
             #endregion
 
