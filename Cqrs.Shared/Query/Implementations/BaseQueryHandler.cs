@@ -4,7 +4,7 @@ namespace Portal.Cqrs.Query
 
     using Portal.Cqrs.Command;
     using Portal.DataAccess;
-    using Portal.Entites;
+    using Portal.Entities;
     using Portal.Infrastructure;
 
     public abstract class BaseQueryHandler<TQuery, TResult> : IQueryHandler<TQuery, TResult>

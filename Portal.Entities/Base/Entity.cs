@@ -1,4 +1,4 @@
-namespace Portal.Entites
+namespace Portal.Entities
 {
     public class Entity
     {

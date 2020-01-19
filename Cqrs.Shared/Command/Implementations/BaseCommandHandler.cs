@@ -4,7 +4,7 @@
 
     using Portal.Cqrs.Query;
     using Portal.DataAccess;
-    using Portal.Entites;
+    using Portal.Entities;
     using Portal.Infrastructure;
 
     public abstract class BaseCommandHandler<TCommand> : ICommandHandler<TCommand>
