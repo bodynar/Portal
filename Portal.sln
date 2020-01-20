@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{15438DA6-D6E9-458F-9BC0-99D44423F7AE}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		user story.txt = user story.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.DataAccess", "Portal.DataAccess\Portal.DataAccess.csproj", "{4BA61402-C98D-4C06-813C-AEAA34BB7365}"
