@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Web", "Portal.Web\Portal.Web.csproj", "{3392467A-70D3-4C23-A438-BC42B2179F9A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs", "Cqrs.Shared\Portal.Cqrs.csproj", "{B1A07A9E-374E-4393-AFD7-6E43FC222FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs", "Portal.Cqrs.Shared\Portal.Cqrs.csproj", "{B1A07A9E-374E-4393-AFD7-6E43FC222FB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs.Commands", "Cqrs.Commands\Portal.Cqrs.Commands.csproj", "{29976579-2168-4B62-9D44-F2EAD2A1D307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs.Commands", "Portal.Cqrs.Commands\Portal.Cqrs.Commands.csproj", "{29976579-2168-4B62-9D44-F2EAD2A1D307}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs.Queries", "Cqrs.Queries\Portal.Cqrs.Queries.csproj", "{08A45B3F-48E1-4267-8423-045EC1311487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portal.Cqrs.Queries", "Portal.Cqrs.Queries\Portal.Cqrs.Queries.csproj", "{08A45B3F-48E1-4267-8423-045EC1311487}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Cqrs", "2. Cqrs", "{EE34B081-112E-4437-AF96-62BA0013BEB2}"
 EndProject

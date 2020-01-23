@@ -34,10 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cqrs.Commands\Portal.Cqrs.Commands.csproj" />
-    <ProjectReference Include="..\Cqrs.Queries\Portal.Cqrs.Queries.csproj" />
-    <ProjectReference Include="..\Cqrs.Shared\Portal.Cqrs.csproj" />
     <ProjectReference Include="..\Portal.Bootstrap\Portal.Bootstrap.csproj" />
+    <ProjectReference Include="..\Portal.Cqrs.Commands\Portal.Cqrs.Commands.csproj" />
+    <ProjectReference Include="..\Portal.Cqrs.Queries\Portal.Cqrs.Queries.csproj" />
+    <ProjectReference Include="..\Portal.Cqrs.Shared\Portal.Cqrs.csproj" />
     <ProjectReference Include="..\Portal.DataAccess\Portal.DataAccess.csproj" />
     <ProjectReference Include="..\Portal.Entities\Portal.Entities.csproj" />
     <ProjectReference Include="..\Portal.Infrastructure\Portal.Infrastructure.csproj" />
