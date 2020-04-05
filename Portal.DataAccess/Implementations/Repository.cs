@@ -32,7 +32,7 @@ namespace Portal.DataAccess
         public void Delete(TEntity entity)
             => DataBaseContext.Remove(entity);
 
-        public void Update(long id, object updatedEntity)
+        public void Update(long id, TEntity updatedEntity)
         {
             var entity = Get(id);
             if (entity == null)
@@ -48,5 +48,8 @@ namespace Portal.DataAccess
 
         public IQueryable<TEntity> GetAll()
             => DataBaseContext.Set<TEntity>().AsQueryable();
+
+        public IQueryable<TEntity> Where(Specification<TEntity> specification) 
+            => DataBaseContext.Set<TEntity>().Where(specification);
     }
 }

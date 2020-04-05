@@ -15,8 +15,10 @@ namespace Portal.DataAccess
 
         TEntity Get(long id);
 
-        void Update(long id, object updatedModel);
+        void Update(long id, TEntity updatedModel);
 
         IQueryable<TEntity> GetAll();
+
+        IQueryable<TEntity> Where(Specification<TEntity> specification);
     }
 }
