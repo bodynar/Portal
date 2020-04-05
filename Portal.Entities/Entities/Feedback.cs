@@ -8,12 +8,10 @@
 
         public string AuthorId { get; set; }
 
-        public virtual Article Article { get; set; }
+        public virtual MediaType MediaType { get; set; }
 
-        public virtual Video Video { get; set; }
+        public long MediaTypeId { get; set; }
 
-        public virtual Photo Photo { get; set; }
-
-        public virtual PhotoAlbum PhotoAlbum { get; set; }
+        public long MediaObjectId { get; set; }
     }
 }

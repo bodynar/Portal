@@ -9,5 +9,7 @@
         public virtual MediaType MediaType { get; set; }
 
         public long MediaTypeId { get; set; }
+
+        public long MediaObjectId { get; set; }
     }
 }

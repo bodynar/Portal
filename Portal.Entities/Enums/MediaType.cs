@@ -7,5 +7,7 @@
         Article = 2,
 
         PhotoAlbum = 3,
+
+        Photo = 4,
     }
 }
