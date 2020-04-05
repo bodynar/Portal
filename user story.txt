@@ -1,6 +1,7 @@
 ﻿
     User story
 
+    ---->
     I. As user
 
         1. -- Registration and login
@@ -18,7 +19,8 @@
             2.3. On next page i can write article (name, category selection, text) and publish it or choose delayed publishing
             2.4. On article list I can click on article name and open article page with full text
             2.5. If it is my article - I see Edit button and I can edit it via clicking it
-            2.6. I can delete article on article page with describing reason. After few days article will be gone
+            2.6. I can delete article on article page with describing reason. After few days article will be gone *(2)
+            
             2.7. I can navigate through site via menu. I see next items:
                 - Main (News)
                 - Photos
@@ -26,27 +28,96 @@
                 - Calendar (Absence)
                 - My profile
             2.8. Menu items are animated and representing page where currently I'm staying
-            2.9.
+            2.9. I cant click on menu item if I dont have access to page
+            2.10. I get page with error message telling me about permission error if I manually enter the page
+            2.11. On menubar I see bell which displays my current not read notifications
+            2.12. By clicking the bell I see drop area with latest notifications
+            2.13. I can click on notification icon to mark them as read
+            2.14. I can click on "View all" to open page with my notifications
 
         3. -- Photo
+            3.1. On Photos page I see albums with filter panel and paginator-panel. All albums presented as single-photo preview, name, photos amount and date.
+                These items are animated.
+            3.2. I can filter albums by tags, category or date
+            3.3. I can clear all my filters by clicking button "Show all"
+            3.4. Button "Show all" indicates when its turned on
+            3.5. On the panel with filter I see button "Add album".
+                After clicking it I see page with small form where I can type name for an album, date, select tags (or create new) and upload photos.
+            3.6. After filling up form I click "Add" and I see notification about quequing my request for approval [depends on user role]
+            3.7. After my request for adding album is approved I can see my album in the list
+            3.8. I can click on album preview and I will see page with album photos and information (name, date, tags, description)
+            3.9. I can add photos to my albums by clicking button on my album's page
+            3.10. I can update photo's description
+            3.11. I can delete photos in my album by clicking button
+            3.12. I can delete my album *(2)
+            3.13. If my request for deleting album is approved - it will be removed after 24 hours. Until I see my album, but marked as deleted
 
         4. -- Videos
-        
-        5. -- Calendar (Absence)
+            4.1. On Videos page I see list of videos. I see video-preview image, name, description, duration and count of views. All items are animated.
+            4.2. I see filter panel. I can use filters to filter videos. I see filters for category, tags, name, duration
+            4.3. I can click on video preview and open page with video.
+            4.4. On video page I see video with name, description, tags, author, uploaded date, count of views.
 
-        6. -- My profile
+        5. -- Comments
+            5.1. I see comments on article, album, photo, video pages
+            5.2. If comments are opened for me - I can add comment
+            5.3. I can answer to other user comment
+            5.4. I can delete my comment
+            5.5. I see deleted comments as "Comment deleted" label
+            5.6. I can edit my comment after 1 hour its posted. After editing I see "EDITED" label. I see same label for others comment
+            5.7. My comments highlighed by nickname highlight
+        
+        6. -- Rating \ feedbacks
+            6.1. I see rating block on article, photo and video page. This is two icons with numbers representing amount of people, who liked and dis-liked it content. Icons are animated.
+            6.2. I can click on thumbs-up icon to set positive feedback. On the other hand I can click thumbs-down icon to set negative feedback. Number will be updated after my click.
+            6.3. I cant click twice on same icon.
+            6.4. If I click on other icon after clicking first one - my feedback will be added to clicked and substracted from previous one.
+            6.5. I cant see anything except numbers (which represeting amount of people clicked button) about feedback
+
+        7. -- Calendar (Absence)
+            7.1. I see calendar of absences. It represented as month calendar with highlights.
+            7.2. On this calendar I see absences of all users
+            7.3. I can filter absences by type
+            7.4. I can navigate calendar and discover past months and next
+            7.5. I can create absence by clicking button. After clicking button I see form with two date fields defining date range of absence, reason, type, employee-replacement and comments. 
+                Also, after selecting dates I see how much it will take in days.
+                After I submit this form my request will be sent to manager and I can see my absence marked as "waiting" on calendar page
+            7.6. I can call form for edit absence request by clicking on my absences. After editing information and submiting it will be marked as waiting and will wait for approve, even if it was approved.
+            7.7. 
+
+        8. -- My profile
             - my absences (+ requests)
+            - my notifications
             - my vids
             - my articles
             - my photos
             - my comments
             - my settings
-        . I can open photo page and i discover photo
 
     ----
     * 1 - Notifications about birth days, weekends, comments, feedbacks and important news (will be added)
+    * 2 - Will be marked as deleted and manager should approve or reject this request. Untill this item will be not discovered by other users.
 
-    II. As administrator (user story from ch. I already included)
+    ---->
+    II. As manager (user story from ch. I already included)
+        (suggested other name: [])
+        
+        1.
+
+        -- departments manage
+
+        -- positions manage
+
+        -- videos manage
+
+        -- articles manage
+
+        -- videos manage
+
+        -- comments manage
+
+    ---->
+    III. As administrator (user story from ch. I already included)
         
         1.
         -- user manage
@@ -75,19 +146,3 @@
         -- global settings manage
             - test mail message
             - change notification preset
-
-    III. As manager (suggested other name: [])
-        
-        1.
-
-        -- departments manage
-
-        -- positions manage
-
-        -- videos manage
-
-        -- articles manage
-
-        -- videos manage
-
-        -- comments manage
