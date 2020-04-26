@@ -1,0 +1,6 @@
+    
+    -- React
+        1. Create Tree-style components to represent main page
+            then create same style components to represent other pages
+        2. Use Redux on these components-trunks
+        3. Migrate to react-navigation from root
