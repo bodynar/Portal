@@ -62,6 +62,7 @@
             5.1. I see comments on article, album, photo, video pages
             5.2. If comments are opened for me - I can add comment
             5.3. I can answer to other user comment
+            5.3.1. I see comment replies and it replies as tree trunks
             5.4. I can delete my comment
             5.5. I see deleted comments as "Comment deleted" label
             5.6. I can edit my comment after 1 hour its posted. After editing I see "EDITED" label. I see same label for others comment
@@ -79,20 +80,56 @@
             7.2. On this calendar I see absences of all users
             7.3. I can filter absences by type
             7.4. I can navigate calendar and discover past months and next
-            7.5. I can create absence by clicking button. After clicking button I see form with two date fields defining date range of absence, reason, type, employee-replacement and comments. 
-                Also, after selecting dates I see how much it will take in days.
-                After I submit this form my request will be sent to manager and I can see my absence marked as "waiting" on calendar page
-            7.6. I can call form for edit absence request by clicking on my absences. After editing information and submiting it will be marked as waiting and will wait for approve, even if it was approved.
-            7.7. 
+            7.5. I can not move absences represented as rows
+            7.6. I recognize different absence types depending on its color
+            7.7. I see only absences which is approved or on approval state
+            7.8. I see start and end date of absence in its block. I see status and type of absence. If absence with replace - i see name of replace employee.
 
         8. -- My profile
-            - my absences (+ requests)
-            - my notifications
-            - my vids
-            - my articles
-            - my photos
-            - my comments
-            - my settings
+            8.1. I see my profile picture on menu, around my display name
+            8.2. I can click to my display name and navigate to my profile settings page
+            8.3. I see information about my account, including personal avatar
+            8.4. I see few menu options on page: Settings, Absences, Notifications. All of these has prefix 'My'.
+            8.5. I see different visual styles by hovering and clicking it. By clicking im navigating to its page. Currently Setting menu item is highlighted.
+            
+                8.1.1. I can click Edit button and all fields on page will be editable, even avatar image.
+                8.1.2. After editing field data i see error message if i didn't fulfilled required data. I will see it after i change my current field selection.
+                8.1.3. After finishing editing form data i can submit form with button "Save". After clicking it - it will change style and i will see loading circle. 
+                    After few moments it will gone and form will be replaced by previous page - where i saw settings and avatar.
+                8.1.4. On edit form i can change my avatar or delete it. If i want to change it i click upload icon and select file with strict formats (image formats).
+                    After selecting image i will see upload progress bar and then see editor where i can select area on my image. Rectange is fixed aspect ratio so i can not change it. I can change rectange size.
+                    I can rotate my image and use zoom options. When i'm done with editing - i select area by moving and resizing rectange and click 'Save'. After few moments i see my avatar updated on the form.
+                8.1.5. After saving my form data with uploaded avatar i see my avatar change on menu on the top of the site.
+
+                8.2.1. After clicking Absences menu option i see two tabs: Absences and Calendar. I see button "Add absence". On a first tab i see absences in the table.
+                8.2.2. Absences which are approved have different style from whose which not approved or in a draft state
+                8.2.3. Each absence row has dropdown actions with: Edit, Send to approve, Print, Upload scan - items depend on absence state
+                8.2.4. By clicking "Add basence" button I can create absence. After clicking button I see form with two date fields defining date range of absence, reason, type, employee-replacement and comments. 
+                    Also, after selecting dates I see how much it will take in days. I can select employee replacement only whose who have my position and available for selected period.
+                8.2.5. After clicking option 'Send to approve' my request will be sent to manager. Absence data in table will change it styles and will have status 'On approval'.
+                8.2.6. After clicking option 'Edit' i see same form which i used to create absence request. All next logic is the same.
+                8.2.7. Option 'Print' is available only when absence has status 'Approved'. After clicking it - its starts to download .docx file with my absence requst, filled with data of absence.
+                [?] 8.2.8. Option 'Upload scan' is available only when absence has status 'Approved'. After clicking it - i see window with file selection. I can select only pdf.
+                    After selecting file i see upload progress bar indicating handling process.
+                    If i selected correct scan - i see notification 'Request scan is correct. Sending request. Avait response on email.'
+                8.2.9. If my absence has 'In approval' state and i proceed with 'Edit' option - my absence will be pushed to 'Draft' state.
+                8.2.10. I see trash icon next to option arrow. After clicking it i see confirm window. After confirming my request is being deleted.
+                8.2.11. I see Calendar tab. On this tab i see calendar represented as month separated onto weeks on each row. 
+                8.2.12. I can add absences by double-clicking on day where i want to start my absence. I see form (same as in p. 8.2.4) where start date is setted to selected date.
+                8.2.13. I see created absences with different styles representing its statuses.
+                8.2.14. I can edit creted absences which is not in status 'Sent scan'.
+                8.2.15. I see but cant edit absences from the past.
+                8.2.16. By double clicking to absence i can edit it. After editing appears same logic from p. 8.2.9
+                8.2.17. Above tabs i see number of available days for vacation.
+                8.2.18. After creating absence (p. 8.2.4) - number of available days for holiday will be substracted by number of selected dates from absence. If result will be below 0 i will see a notification about it.
+                8.2.19. If currently i have 0 days available for vacation i will be warned after creating absence with type 'Paid vacation'.
+
+                8.3.1. After clicking Notification menu option i see current notification settings page.
+                8.3.2. I see notification settings represented as table with key-value.
+                8.3.3. On the top of settings i see switch for turning on\off all notifications.
+                8.3.4. Near every notification setting i see checkbox which represent state of notification: on\off.
+                8.3.5. For some notifications, which is system notifications, i cannot turn it off.
+                8.3.6. For every notification i can change notification type: it could be email, site or email and site
 
     ----
     * 1 - Notifications about birth days, weekends, comments, feedbacks and important news (will be added)
@@ -102,22 +139,31 @@
     II. As manager (user story from ch. I already included)
         (suggested other name: [])
         
-        1.
+        1. Site
+            1.1. On site menu i see another one menu option: Management.
+            1.2. On management page i see different tabs: Structure, Absences, Media. Tabs are animated.
+            1.3. I can navigate through tabs if i have specified role, e.g. absences manager, media manager and structure manager. Innactive tabs have different styles from active.
+            
+            1.4.1. Structure
+                1.4.1.1. On structure tab i see 2 areas: Departments and Positions divided onto pages.
+                
+                1.4.1.2. On departments page i see department structure as tree
 
-        -- departments manage
+                1.4.1.3. On positions page i see list of positions
 
-        -- positions manage
+            1.4.2. Absences
+                1.4.2.1. On
 
-        -- videos manage
-
-        -- articles manage
-
-        -- videos manage
-
-        -- comments manage
+            1.4.3. Media management
+                1.4.3.1. Videos
+                1.4.3.2. Articles
+                1.4.3.3. Photo albums
+                1.4.3.4. Comments
+                        - disable comments for media specific
+                        - disable commenting for user
 
     ---->
-    III. As administrator (user story from ch. I already included)
+    III. As administrator (user story from ch. I & II already included)
         
         1.
         -- user manage
@@ -127,16 +173,6 @@
             - 
 
         -- access roles manage
-
-        -- departments manage
-
-        -- positions manage
-
-        -- videos manage
-
-        -- articles manage
-
-        -- videos manage
 
         -- comments manage
             - change bad words filter
